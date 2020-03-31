@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 let name = "jack";
 
 if(name){
@@ -14,3 +15,10 @@ let b = 2;
 [a, b] = [b, a];
 console.log(a);
 console.log(b);
+
+new Promise((resolve,reject)=>{
+    resolve("succeed")
+    reject("failed")
+})
+let s = new Set()
+s.add("key")
